@@ -1,0 +1,52 @@
+﻿<Window x:Class="ArrayFuncties_4___Reaction_speed.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArrayFuncties_4___Reaction_speed"
+        mc:Ignorable="d"
+        Title="Reaction speed" Height="450" Width="800">
+    <Grid Background="DarkGray">
+        <Viewbox Stretch="Uniform">
+            <DockPanel Background="Gray" LastChildFill="True">
+                <TextBlock DockPanel.Dock="Bottom" 
+                           HorizontalAlignment="Left"
+                           Margin="20 0 0 10"
+                           FontSize="16"
+                           FontStyle="Italic"
+                           Name="timeTextBlock">
+                    test tijd dag
+                </TextBlock>
+                <WrapPanel DockPanel.Dock="Left" Margin="20" Orientation="Vertical">
+                    <TextBlock Margin="50 20 50 20" FontSize="20"
+                               HorizontalAlignment="Center">
+                    Klik op het monster
+                    </TextBlock>
+                    <Button 
+                        Width="100" 
+                        FontSize="18" 
+                        Click="startButton_Click"
+                        Name="startButton">
+                        Start
+                    </Button>
+                    <TextBlock Margin="20 50 20 20" 
+                           FontSize="20"  FontWeight="Bold">
+                        Snelste Tijd
+                    </TextBlock>
+                    <TextBlock 
+                        Margin="20 0 20 20"
+                        FontSize="20"
+                        Name="fastestNameTextBlock">
+                        Test Naam
+                    </TextBlock>
+                </WrapPanel>
+                <Image Name="gameImage" 
+                       DockPanel.Dock="Right"
+                       Margin="0 30 30 0"
+                       Source="images/click_monster.png"
+                       MouseDown="gameImage_MouseDown">
+                </Image>
+            </DockPanel>
+        </Viewbox>
+    </Grid>
+</Window>

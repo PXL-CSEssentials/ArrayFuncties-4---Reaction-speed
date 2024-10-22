@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>ArrayFuncties_4___Reaction_speed</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\baby.png" />
+    <None Remove="images\cat.png" />
+    <None Remove="images\click_monster.png" />
+    <None Remove="images\dog.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\baby.png" />
+    <Resource Include="images\cat.png" />
+    <Resource Include="images\click_monster.png" />
+    <Resource Include="images\dog.png" />
+  </ItemGroup>
+
+</Project>
